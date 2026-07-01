@@ -22,6 +22,7 @@ Split text into chunks (~500–1000 characters).
 Generated embeddings for each chunk.
 
 Stored {chunk, embedding, metadata} in MongoDB here metadata involves chunk id.
+
 4.Question Answering
 User enters a question in chat.
 
