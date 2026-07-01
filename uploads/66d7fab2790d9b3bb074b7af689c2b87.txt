@@ -1,0 +1,335 @@
+21-DAY GOOGLE
+INTERVIEW PREPARATION
+PLAN
+DSA · System Design · Behavioral · CS Fundamentals
+Including daily schedule with gym (3 hrs) + project time
+WEEK 1 WEEK 2 WEEK 3
+Core DSA
+Foundations
+Advanced DSA &
+Patterns
+System Design
+Behavioral & Mocks
+Days 1 – 7 Days 8 – 14 Days 15 – 21
+DSA & Coding System Design Behavioral CS Fundamentals
+Review / Mock Gym Time Project Work
+
+-- 1 of 9 --
+
+Google Interview Prep · 21-Day Plan · Page 2
+Daily Schedule
+This schedule applies to all 21 days. Gym and project blocks are fixed; study blocks shift focus according to the day's
+topic.
+TIME ACTIVITY BLOCK
+06:00 – 06:15 Wake up & plan the day —
+06:15 – 09:15 GYM (3 hrs) GYM
+09:30 – 10:00 Breakfast + review yesterday —
+10:00 – 12:00 Theory / Concept Study STUDY
+12:00 – 13:00 Lunch break —
+13:00 – 15:30 LeetCode / Practice Problems STUDY
+15:30 – 16:30 Project Work (side project) PROJECT
+16:30 – 16:45 Short break —
+16:45 – 18:15 System Design / Behavioral DESIGN/BEH
+18:15 – 19:00 Dinner —
+19:00 – 20:00 Review solutions & anki/notes REVIEW
+20:00 – 21:00 Project Work (continued) PROJECT
+21:00 – 21:30 Wind down & plan tomorrow —
+Gym: 3 hrs Study (Theory): 2 hrs Practice (LC): 2.5 hrs
+Project Work: 2 hrs System/Beh: 1.5 hrs Review/Notes: 1 hr
+
+-- 2 of 9 --
+
+Google Interview Prep · 21-Day Plan · Page 3
+WEEK 1 Core DSA Foundations Days 1 – 7
+DAY 1 Arrays & Strings DSA & CODING
+TOPICS TO STUDY
+• Two-pointer technique • Sliding window • Prefix
+sums • String manipulation • Anagram & palindrome
+patterns
+PRACTICE PROBLEMS
+• Two Sum, 3Sum, 4Sum • Longest substring
+without repeat • Minimum window substring • Valid
+palindrome II
+RESOURC
+ES LeetCode Array tag (Easy→Medium) | NeetCode Array playlist
+TIP Nail the template for sliding window — most Google array questions are a variation of it.
+DAY 2 Linked Lists DSA & CODING
+TOPICS TO STUDY
+• Reversal patterns • Fast & slow pointers • Merge &
+split • Cycle detection • Dummy node trick
+PRACTICE PROBLEMS
+• Reverse linked list (I & II) • Linked list cycle •
+Merge two sorted lists • LRU Cache
+RESOURC
+ES LeetCode Linked List tag | Visualgo: Linked List animations
+TIP Draw pointer manipulation before coding — linked list bugs are almost always pointer direction errors.
+DAY 3 Stacks & Queues DSA & CODING
+TOPICS TO STUDY
+• Monotonic stack • Min stack • Deque / sliding
+window max • BFS with queue • Expression
+evaluation
+PRACTICE PROBLEMS
+• Valid parentheses • Daily temperatures • Largest
+rectangle in histogram • Sliding window maximum
+RESOURC
+ES LeetCode Stack tag | Monotonic stack guide on CP-algorithms
+TIP Monotonic stacks show up constantly at Google — know both increasing and decreasing flavors cold.
+DAY 4 Trees: BFS/DFS DSA & CODING
+TOPICS TO STUDY
+• Binary tree traversals • Level order BFS • DFS
+pre/in/post order • Diameter & height • Path sum
+patterns
+PRACTICE PROBLEMS
+• Binary tree level order traversal • Maximum depth •
+Diameter of binary tree • Path sum II
+RESOURC
+ES LeetCode Tree tag | NeetCode Trees playlist
+TIP Master the recursive DFS template with return value. 80% of tree problems are variations.
+
+-- 3 of 9 --
+
+Google Interview Prep · 21-Day Plan · Page 4
+DAY 5 BST & Heaps DSA & CODING
+TOPICS TO STUDY
+• BST insert/delete/search • Inorder = sorted
+property • Min-heap / max-heap • K-th
+largest/smallest • Merge K sorted lists
+PRACTICE PROBLEMS
+• Kth largest element • Merge K sorted lists • Top K
+frequent elements • Find median from data stream
+RESOURC
+ES LeetCode Heap tag | Python heapq docs
+TIP Know when to use heap vs sorting — heaps are O(n log k) vs O(n log n). Google loves this trade-off.
+DAY 6 Graphs: BFS/DFS DSA & CODING
+TOPICS TO STUDY
+• Adjacency list & matrix • BFS shortest path • DFS
+connected components • Topological sort • Cycle
+detection in directed graph
+PRACTICE PROBLEMS
+• Number of islands • Clone graph • Course
+schedule I & II • Word ladder
+RESOURC
+ES LeetCode Graph tag | CP-algorithms BFS/DFS
+TIP Always clarify if the graph is directed/undirected and if it can have cycles — this determines your algorithm.
+DAY 7 Review & Mock #1 REVIEW / MOCK
+TOPICS TO STUDY
+• Timed mock: 2 medium problems in 45 min •
+Review weak spots from days 1-6 • Analyze time
+complexity of all patterns • Speed drill: easy
+problems under 10 min
+PRACTICE PROBLEMS
+• LeetCode weekly contest • Pramp peer mock
+interview
+RESOURC
+ES Pramp.com | LeetCode mock interview feature
+TIP Simulate real conditions: camera on, talk through your approach out loud before typing.
+
+-- 4 of 9 --
+
+Google Interview Prep · 21-Day Plan · Page 5
+WEEK 2 Advanced DSA Days 8 – 14
+DAY 8 Dynamic Programming I DSA & CODING
+TOPICS TO STUDY
+• 1D DP: Fibonacci, climbing stairs • Memoization vs
+tabulation • House robber pattern • Coin change
+patterns • Longest increasing subsequence
+PRACTICE PROBLEMS
+• Climbing stairs • House robber I & II • Coin change
+• Longest increasing subsequence
+RESOURC
+ES NeetCode DP playlist (1D) | MIT OCW DP lecture
+TIP Always define dp[i] clearly in words before writing code. Ambiguity here causes cascading bugs.
+DAY 9 Dynamic Programming II DSA & CODING
+TOPICS TO STUDY
+• 2D DP: grids • Edit distance / string matching •
+Knapsack variants • Palindrome DP • Partition
+problems
+PRACTICE PROBLEMS
+• Unique paths • Edit distance • Longest common
+subsequence • Word break
+RESOURC
+ES NeetCode DP playlist (2D) | Aditya Verma DP YouTube series
+TIP Draw the DP table before coding — filling it by hand reveals the recurrence relation instantly.
+DAY 10 Recursion & Backtracking DSA & CODING
+TOPICS TO STUDY
+• Recursion tree visualization • Backtracking
+template • Subsets, permutations, combinations •
+N-Queens pattern • Pruning strategies
+PRACTICE PROBLEMS
+• Subsets I & II • Permutations • Combination sum I
+& II • N-Queens
+RESOURC
+ES LeetCode Backtracking tag | NeetCode Backtracking playlist
+TIP Master the choose-explore-unchoose template. Every backtracking problem is a variation.
+DAY 11 Binary Search DSA & CODING
+TOPICS TO STUDY
+• Standard binary search template • Search in
+rotated array • Binary search on answer • First/last
+position • 2D matrix search
+PRACTICE PROBLEMS
+• Binary search • Search in rotated sorted array •
+Find minimum in rotated • Median of two sorted
+arrays
+RESOURC
+ES LeetCode Binary Search tag | Binary search on answer (Codeforces)
+TIP Master lo/hi boundary conditions first — wrong boundaries cause infinite loops and off-by-one errors.
+
+-- 5 of 9 --
+
+Google Interview Prep · 21-Day Plan · Page 6
+DAY 12 Tries & Advanced Trees DSA & CODING
+TOPICS TO STUDY
+• Trie insert/search/prefix • Segment tree basics •
+Union-Find (DSU) • Kruskal's algorithm • Dijkstra's
+algorithm
+PRACTICE PROBLEMS
+• Implement trie • Word search II • Number of
+connected components • Redundant connection
+RESOURC
+ES LeetCode Trie tag | CP-algorithms Segment Tree
+TIP Trie is a Google favorite for autocomplete and dictionary problems. Know it cold.
+DAY 13 Sorting & Searching DSA & CODING
+TOPICS TO STUDY
+• QuickSort & merge sort (with code) • Counting
+sort, radix sort • Quick select for k-th element •
+Interval merging & overlapping • Meeting rooms
+patterns
+PRACTICE PROBLEMS
+• Sort colors (Dutch national flag) • Merge intervals •
+Meeting rooms II • Kth largest (quick select)
+RESOURC
+ES Visualgo: sorting animations | LeetCode Intervals tag
+TIP Be able to implement merge sort from scratch in 10 min — Google occasionally asks this in phone screens.
+DAY 14 Review & Mock #2 REVIEW / MOCK
+TOPICS TO STUDY
+• Timed mock: 1 hard + 1 medium problem • Review
+DP and backtracking patterns • Complexity analysis
+drill • Code style & clarity practice
+PRACTICE PROBLEMS
+• Full Pramp mock (system + coding) • LeetCode
+Google tag questions
+RESOURC
+ES Google interview prep on LeetCode | Interviewing.io
+TIP Practice saying 'Let me think about edge cases' aloud — it signals structured thinking to interviewers.
+
+-- 6 of 9 --
+
+Google Interview Prep · 21-Day Plan · Page 7
+WEEK 3 System Design, Behavioral & Mocks Days 15 – 21
+DAY 15 System Design Fundamentals SYSTEM DESIGN
+TOPICS TO STUDY
+• Scalability: horizontal vs vertical • Load balancers •
+CDN & caching layers • SQL vs NoSQL trade-offs •
+CAP theorem
+PRACTICE PROBLEMS
+• Design a URL shortener • Sketch a basic cache
+layer • Read about Google Bigtable architecture
+RESOURC
+ES System Design Primer (GitHub) | DDIA ch. 1-3 (Kleppmann)
+TIP Google expects trade-off discussion, not just component names. Ask 'why' for every design choice.
+DAY 16 System Design: Distributed SYSTEM DESIGN
+TOPICS TO STUDY
+• Consistent hashing • Sharding strategies •
+Replication & consensus (Raft basics) • Message
+queues: Kafka patterns • Rate limiting algorithms
+PRACTICE PROBLEMS
+• Design a distributed key-value store • Design a
+notification system
+RESOURC
+ES DDIA ch. 5-6 | System Design Interview vol. 1 (Alex Xu)
+TIP Frame your answer as a conversation: ask clarifying questions, estimate scale, then build bottom-up.
+DAY 17 System Design: Real Products SYSTEM DESIGN
+TOPICS TO STUDY
+• Design YouTube / Netflix (video streaming) •
+Design Google Search / web crawler • Design
+Twitter / news feed • Design WhatsApp (real-time
+messaging) • Design Uber (geo-aware, real-time)
+PRACTICE PROBLEMS
+• Pick 2 designs and draw full architecture diagrams
+• Record yourself explaining one design for 30 min
+RESOURC
+ES Grokking System Design (Educative) | ByteByteGo newsletters
+TIP Mention specific Google tech (Spanner, Bigtable, Pub/Sub) where appropriate — shows familiarity.
+DAY 18 CS Fundamentals CS FUNDAMENTALS
+TOPICS TO STUDY
+• OS: processes, threads, deadlocks • Memory:
+heap vs stack, garbage collection • Concurrency:
+locks, semaphores, race conditions • Networking:
+TCP/UDP, HTTP/2, WebSockets • Database: ACID,
+indexing, query optimization
+PRACTICE PROBLEMS
+• Explain dining philosophers problem • Describe
+how a DB index works • Explain HTTPS end-to-end
+RESOURC
+ES OSTEP (free online) | High Performance Browser Networking (Grigorik)
+TIP Google phone screens often open with CS fundamentals. Treat this as a refresher, not a deep dive.
+
+-- 7 of 9 --
+
+Google Interview Prep · 21-Day Plan · Page 8
+DAY 19 Behavioral: Googleyness BEHAVIORAL
+TOPICS TO STUDY
+• STAR method mastery • Google's 4 hiring signals:
+cognitive ability, leadership, Googleyness, role
+knowledge • Ambiguity & failure stories •
+Cross-functional collaboration examples • Curiosity,
+comfort with ambiguity, team orientation
+PRACTICE PROBLEMS
+• Write 8 STAR stories: leadership, conflict, failure,
+ambiguity, innovation, impact • Practice each story
+aloud under 2 min
+RESOURC
+ES Google re:Work interview guide | Life at Google YouTube channel
+TIP Interviewers rate Googleyness on curiosity and integrity — show intellectual excitement, not just achievement.
+DAY 20 ML & Bit Manipulation CS FUNDAMENTALS
+TOPICS TO STUDY
+• Big-O complexity mastery & space analysis • Bit
+manipulation patterns • Probability & combinatorics
+basics • Math-heavy interview patterns • If ML role:
+loss functions, gradient descent, overfitting
+PRACTICE PROBLEMS
+• Single number (XOR trick) • Power of two via bits •
+Probability brain-teasers • Implement linear
+regression (if ML role)
+RESOURC
+ES LeetCode Bit Manipulation tag | StatQuest YouTube (ML basics)
+TIP Skip deeply if not an ML role — use this day for extra DP or system design practice instead.
+DAY 21 Full Mock Day REVIEW / MOCK
+TOPICS TO STUDY
+• Morning: full 45-min coding mock (2 problems) •
+Afternoon: 45-min system design mock • Evening:
+30-min behavioral storytelling run-through • Review
+all weak patterns • Read all STAR stories once
+more
+PRACTICE PROBLEMS
+• Interviewing.io or Pramp full mock • LeetCode
+Google tag: 3 unseen medium problems
+RESOURC
+ES Interviewing.io | Pramp.com | LeetCode Google tag
+TIP Rest and sleep well tonight. Cognitive performance drops 20-30% on poor sleep. Preparation is done.
+
+-- 8 of 9 --
+
+Google Interview Prep · 21-Day Plan · Page 9
+Final Tips & Strategy
+Daily Routine 1 hr theory in the morning · 2.5 hrs LeetCode practice · 1 hr review solutions. Repeat every day
+with the day's specific focus.
+Pattern Over
+Volume
+150 problems done with reflection beats 400 done by copy-pasting solutions. Google tests
+pattern recognition, not memorization.
+Behavioral is Not
+Optional
+Google's hiring committee scores Googleyness as a separate signal. Day 19 STAR stories
+need the same prep rigor as Day 9 DP.
+Gym: Cognitive
+Boost
+3 hours of exercise improves memory consolidation by up to 20%. Schedule gym in the
+morning to prime your brain for the study blocks.
+Project Work Use project time to apply what you've learned — build a small full-stack app or contribute to
+open source. Demonstrates initiative in interviews.
+Mock Interviews Days 7, 14, and 21 are dedicated mock days. Use Pramp and Interviewing.io. Talk through
+your approach aloud every time — silence kills in Google interviews.
+
+-- 9 of 9 --
+

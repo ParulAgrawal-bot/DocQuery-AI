@@ -1,0 +1,206 @@
+INTRODUCTION TO DATA SCIENCE
+LECTURE NOTES
+UNIT - 1
+Introduction to data science
+Data science:
+Data science is the domain of study that deals with vast volumes of data using modern tools and
+techniques to find unseen patterns, derive meaningful information, and make business decisions.
+Data science uses complex machine learning algorithms to build predictive models.
+The data used for analysis can come from many different sources and presented in various formats.
+Data science is about extraction, preparation, analysis, visualization, and maintenance of
+information. It is a cross disciplinary field which uses scientific methods and processes to draw
+insights from data.
+The Data Science Lifecycle
+Data science’s lifecycle consists of five distinct stages, each with its own tasks:
+Capture: Data Acquisition, Data Entry, Signal Reception, Data Extraction. This stage involves
+gathering raw structured and unstructured data.
+Maintain: Data Warehousing, Data Cleansing, Data Staging, Data Processing, Data Architecture.
+This stage covers taking the raw data and putting it in a form that can be used.
+Process: Data Mining, Clustering/Classification, Data Modeling, Data Summarization. Data
+scientists take the prepared data and examine its patterns, ranges, and biases to determine how
+useful it will be in predictive analysis.
+Analyze: Exploratory/Confirmatory, Predictive Analysis, Regression, Text Mining, Qualitative
+Analysis. Here is the real meat of the lifecycle. This stage involves performing the various analyses
+on the data.
+Communicate: Data Reporting, Data Visualization, Business Intelligence, Decision Making. In
+this final step, analysts prepare the analyses in easily readable forms such as charts, graphs, and
+reports.
+Evolution of Data Science: Growth & Innovation
+Data science was born from the idea of merging applied statistics with computer science. The
+resulting field of study would use the extraordinary power of modern computing. Scientists realized
+they could not only collect data and solve statistical problems but also use that data to solve real-
+world problems and make reliable fact-driven predictions.
+1962: American mathematician John W. Tukey first articulated the data science dream. In his now-
+famous article “The Future of Data Analysis,” he foresaw the inevitable emergence of a new field
+nearly two decades before the first personal computers. While Tukey was ahead of his time, he was
+not alone in his early appreciation of what would come to be known as “data science.”
+1977: The theories and predictions of “pre” data scientists like Tukey and Naur became more
+concrete with the establishment of The International Association for Statistical Computing (IASC),
+whose mission was “to link traditional statistical methodology, modern computer technology, and
+the knowledge of domain experts in order to convert data into information and knowledge.”
+1980s and 1990s: Data science began taking more significant strides with the emergence of the
+first Knowledge Discovery in Databases (KDD) workshop and the founding of the International
+Federation of Classification Societies (IFCS).
+1994: Business Week published a story on the new phenomenon of “Database Marketing.” It
+described the process by which businesses were collecting and leveraging enormous amounts of
+data to learn more about their customers, competition, or advertising techniques.
+1990s and early 2000s: We can clearly see that data science has emerged as a recognized and
+specialized field. Several data science academic journals began to circulate, and data science
+
+-- 1 of 5 --
+
+proponents like Jeff Wu and William S. Cleveland continued to help develop and expound upon
+the necessity and potential of data science.
+2000s: Technology made enormous leaps by providing nearly universal access to internet
+connectivity, communication, and (of course) data collection.
+2005: Big data enters the scene. With tech giants such as Google and Facebook uncovering large
+amounts of data, new technologies capable of processing them became necessary. Hadoop rose to
+the challenge, and later on Spark and Cassandra made their debuts.
+2014: Due to the increasing importance of data, and organizations’ interest in finding patterns and
+making better business decisions, demand for data scientists began to see dramatic growth in
+different parts of the world.
+2015: Machine learning, deep learning, and Artificial Intelligence (AI) officially enter the realm of
+data science.
+2018: New regulations in the field are perhaps one of the biggest aspects in the evolution in data
+science.
+2020s: We are seeing additional breakthroughs in AI, machine learning, and an ever-more-
+increasing demand for qualified professionals in Big Data.
+Stages in a data science project
+Data Science workflows tend to happen in a wide range of domains and areas of expertise such as
+biology, geography, finance or business, among others. This means that Data Science projects can
+take on very different challenges and focuses resulting in very different methods and data sets being
+used. A Data Science project will have to go through five key stages: defining a problem, data
+processing, modelling, evaluation and deployment.
+Defining a problem
+The first stage of any Data Science project is to identify and define a problem to be solved.
+Without a clearly defined problem to solve, it can be difficult to know how to tackle to the problem.
+For a Data Science project this can include what method to use, such as is classification,
+regression or clustering. Also, without a clearly defined problem, it can be hard to determine what
+your measure of success would be.
+Without a defined measure of success, you can never know when your project is complete or is
+good enough to be used in production.
+A challenge with this is being able to define a problem small enough that it can be solved/tackled
+individually.
+Data Processing
+Once you have your problem, how you are going to measure success, and an idea of the methods
+you will be using, you can then go about performing the all important task of data processing. This
+is often the stage that will take the longest in any Data Science project and can regularly be the
+most important stage.
+There are a variety of tasks that need to occur at this stage depending on what problem you are
+going to tackle. The first is often finding ways to create or capture data that doesn’t exist yet.
+Once you have created this data, you then need to collect it somewhere and in a format that is useful
+for your model. This will depend on what method you will be using in the modelling phase but it
+will involve figuring out how you will feed the data into your model.
+
+-- 2 of 5 --
+
+The final part of this is to then perform any pre-processing steps to ensure that the data is clean
+enough for the modelling method to work. This may involve removing outliers, or choosing to keep
+them, manipulating null values, whether a null value is a measure or whether it should be imputed
+to the average, or standardising the measures.
+Modelling
+The next part, and often the most fun and exciting part, is the modelling phase of the Data Science
+project. The format this will take will depend primarily on what the problem is and how you defined
+success in the first step, and secondarily on how you processed the data.
+Unfortunately, this is often the part that will take the least amount of time of any Data Science
+project, especially when there are many frameworks or libraries that exist, such as sklearn,
+statsmodels, tensorflow and that can be readily utilised.
+You should have selected the method that you will be using to model your data in the defining a
+problem stage, and this may include simple graphical exploration, regression, classification or
+clustering.
+Evaluation
+Once you have then created and implemented your models, you then need to know how to
+evaluate it. Again, this goes back to the problem formulation stage where you will have defined
+your measure of success, but this is often one of the most important stages.
+Depending on how you processed your data and set-up your model, you may have a holdout
+dataset or testing data set that can be used to evaluate your model. On this dataset,
+you are aiming to see how well your model performs in terms of both accuracy and reliability.
+Deployment
+Finally, once you have robustly evaluated your model and are satisfied with the results, then you
+can deploy it into production. This can mean a variety of things such as whether you use the insights
+from the model to make changes in your business, whether you use your model to check whether
+changes that have been made were successful, or whether the model is deployed somewhere to
+continually receive and evaluate live data.
+Applications of data science in various fields
+Major Applications of Data Science
+
+-- 3 of 5 --
+
+1. In Search Engines
+The most useful application of Data Science is Search Engines. As we know when we want to
+search for something on the internet, we mostly used Search engines like Google, Yahoo, Safari,
+Firefox, etc. So Data Science is used to get Searches faster.
+2. In Transport
+Data Science also entered into the Transport field like Driverless Cars. With the help of Driverless
+Cars, it is easy to reduce the number of Accidents.
+For Example, In Driverless Cars the training data is fed into the algorithm and with the help of
+Data Science techniques, the Data is analyzed like what is the speed limit in Highway, Busy Streets,
+Narrow Roads, etc. And how to handle different situations while driving etc.
+3. In Finance
+Data Science plays a key role in Financial Industries. Financial Industries always have an issue of
+fraud and risk of losses. Thus, Financial Industries needs to automate risk of loss analysis in order
+to carry out strategic decisions for the company. Also, Financial Industries uses Data Science
+Analytics tools in order to predict the future.
+For Example, In Stock Market, Data Science is the main part. In the Stock Market, Data Science
+is used to examine past behavior with past data and their goal is to examine the future outcome.
+4. In E-Commerce
+E-Commerce Websites like Amazon, Flipkart, etc. uses data Science to make a better user
+experience with personalized recommendations.
+For Example, When we search for something on the E-commerce websites we get suggestions
+similar to choices according to our past data and also we get recommendations according to most
+buy the product, most rated, most searched, etc. This is all done with the help of Data Science.
+5. In Health Care
+In the Healthcare Industry data science act as a boon. Data Science is used for:
+Detecting Tumor.
+Drug discoveries.
+Medical Image Analysis.
+Virtual Medical Bots.
+Genetics and Genomics.
+Predictive Modeling for Diagnosis etc.
+6. Image Recognition
+Currently, Data Science is also used in Image Recognition. For Example, When we upload our
+image with our friend on Facebook, Facebook gives suggestions Tagging who is in the picture.
+This is done with the help of machine learning and Data Science. When an Image is Recognized,
+the data analysis is done on one’s Facebook friends and after analysis, if the faces which are present
+in the picture matched with someone else profile then Facebook suggests us auto-tagging.
+7. Targeting Recommendation
+Targeting Recommendation is the most important application of Data Science. Whatever the user
+searches on the Internet, he/she will see numerous posts everywhere.
+example: Suppose I want a mobile phone, so I just Google search it and after that, I changed my
+mind to buy offline. Data Science helps those companies who are paying for Advertisements for
+their mobile. So everywhere on the internet in the social media, in the websites, in the apps
+everywhere I will see the recommendation of that mobile phone which I searched for. So this will
+force me to buy online.
+8. Airline Routing Planning
+With the help of Data Science, Airline Sector is also growing like with the help of it, it becomes
+easy to predict flight delays. It also helps to decide whether to directly land into the destination or
+take a halt in between like a flight can have a direct route from Delhi to the U.S.A or it can halt in
+between after that reach at the destination.
+9. Data Science in Gaming
+
+-- 4 of 5 --
+
+In most of the games where a user will play with an opponent i.e. a Computer Opponent, data
+science concepts are used with machine learning where with the help of past data the Computer
+will improve its performance. There are many games like Chess, EA Sports, etc. will use Data
+Science concepts.
+10. Medicine and Drug Development
+The process of creating medicine is very difficult and time-consuming and has to be done with full
+disciplined because it is a matter of Someone’s life. Without Data Science, it takes lots of time,
+resources, and finance or developing new Medicine or drug but with the help of Data Science, it
+becomes easy because the prediction of success rate can be easily determined based on biological
+data or factors. The algorithms based on data science will forecast how this will react to the human
+body without lab experiments.
+11. In Delivery Logistics
+Various Logistics companies like DHL, FedEx, etc. make use of Data Science. Data Science helps
+these companies to find the best route for the Shipment of their Products, the best time suited
+for delivery, the best mode of transport to reach the destination, etc.
+12. Autocomplete
+AutoComplete feature is an important part of Data Science where the user will get the facility to
+just type a few letters or words, and he will get the feature of auto-completing the line. In Google
+Mail, when we are writing formal mail to someone so at that time data science concept of
+Autocomplete feature is used where he/she is an efficient choice to auto-complete the whole
+line. Also in Search Engines in social media, in various apps, AutoComplete feature is widely used.
+
+-- 5 of 5 --
+

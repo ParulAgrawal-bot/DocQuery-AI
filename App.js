@@ -39,7 +39,15 @@ export default function App() {
       });
 
       if (!response.ok) {
-        throw new Error("Upload failed");
+        // Try parsing JSON error message from server
+        let errorMsg = "Upload failed";
+        try {
+          const errData = await response.json();
+          if (errData && errData.error) {
+            errorMsg = errData.error;
+          }
+        } catch (_) {}
+        throw new Error(errorMsg);
       }
 
       const data = await response.json();
@@ -53,7 +61,7 @@ export default function App() {
     } catch (err) {
       console.error(err);
       setUploadStatus("error");
-      setUploadMessage("Failed to upload and process document.");
+      setUploadMessage(err.message || "Failed to upload and process document.");
     }
   };
 

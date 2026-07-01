@@ -1,0 +1,398 @@
+Content Guardian
+Browser Extension
+A Step-by-Step Beginner Roadmap
+Build a Chrome extension that warns you before 18+ scenes and covers the screen
+automatically — explained in plain English
+4 months
+to build it
+6 phases
+step by step
+0 prior
+experience
+needed to start
+n Phase 1 n Phase 2 n Phase 3 n Phase 4 n Phase 5 n Phase 6
+
+-- 1 of 13 --
+
+Content Guardian Extension | Beginner Roadmap | Page 2
+What Are We Building?
+We are building a BROWSER EXTENSION — a small add-on that lives inside your Chrome or Firefox
+browser. It watches what you are streaming on Netflix, Amazon Prime, Disney+, etc. When an 18+ scene is
+about to play, it warns you in advance and puts a black screen over the video until the scene is over.
+Simple Explanation of How It Works
+1 Watch the video time
+The extension checks the video every half second to know exactly where you are in the movie or
+show. Think of it like a timer that keeps track of the current minute:second.
+2 Check a list of scenes
+We have a database (basically a big list) that stores the exact time when bad scenes start and end.
+Example: "In Breaking Bad Season 2 Episode 3, the bad scene starts at 14 minutes 22 seconds
+and ends at 14 minutes 58 seconds."
+3 Give a warning 10 seconds early
+When the video is 10 seconds away from a listed scene, a pop-up message appears saying
+"Warning: 18+ scene coming up!" This gives you time to look away or prepare.
+4 Cover the screen
+At the exact moment the scene starts, a black screen appears over the video. You cannot see the
+scene, but the video keeps playing in the background.
+5 Remove the cover automatically
+When the scene ends, the black screen disappears by itself and you can continue watching
+normally. No action needed from you!
+TIP Is this actually possible? YES! Many extensions like this exist already (example: Netflix Party, Enhancer for
+YouTube). A browser extension is one of the easiest real-world projects you can build as a beginner.
+
+-- 2 of 13 --
+
+Content Guardian Extension | Beginner Roadmap | Page 3
+Tools & Technologies You Will Use
+Do not worry if you do not know these yet — each phase of this roadmap teaches you exactly what you
+need, one step at a time.
+n HTML / CSS
+Used to build the popup window that appears when you
+click the extension icon.
+Think of it as: the look and layout of the extension.
+n JavaScript
+The main programming language. It reads the video
+timer and shows/hides the black screen.
+Think of it as: the brain of the extension.
+n Manifest V3
+A special settings file (manifest.json) that tells Chrome
+what your extension is allowed to do.
+Think of it as: the permission slip for your extension.
+n Chrome Storage API
+Saves user settings (like ON/OFF toggle) so they are
+remembered even after closing the browser.
+Think of it as: a small notepad the extension writes on.
+n Canvas API
+Takes a "screenshot" of the current video frame so the
+AI can check what is on screen.
+Think of it as: a camera that takes photos of the video.
+n TensorFlow.js
+A ready-made AI tool that can look at a video frame and
+decide if it contains adult content.
+Think of it as: a smart filter that understands images.
+n TMDB API
+A free website that gives you movie/show info (title, ID)
+so you can match it to your scene list.
+Think of it as: an encyclopedia of movies and shows.
+n Supabase
+A free online database where you store the list of scene
+timestamps for all shows/movies.
+Think of it as: a Google Sheet stored online.
+
+-- 3 of 13 --
+
+Content Guardian Extension | Beginner Roadmap | Page 4
+Before You Start: Your Setup Checklist
+Do these things FIRST before writing a single line of code. Each one is free and takes less than 10
+minutes.
+n Install VS Code
+This is a free code editor. Download from: code.visualstudio.com It is the most popular editor for web
+development.
+n Install Node.js
+This lets you run JavaScript on your computer (outside the browser). Download from: nodejs.org — pick the
+"LTS" version.
+n Create a free GitHub account
+GitHub is where you save your code online and track changes. Sign up at: github.com — it is completely
+free.
+n Get a free TMDB API key
+TMDB is a free movie database. Sign up at: themoviedb.org Then go to Settings > API to get your free key.
+n Create a free Supabase account
+Supabase gives you a free online database to store scene timestamps. Sign up at: supabase.com — no
+credit card needed.
+n Read the Chrome Extension docs (just the intro)
+Spend 20 minutes reading the "Getting Started" page at:
+developer.chrome.com/docs/extensions/mv3/getstarted/
+TIP You do NOT need to know all of these tools before starting. Just install them and you will learn how to use
+each one as you go. Learning by building is the fastest way for beginners.
+
+-- 4 of 13 --
+
+Content Guardian Extension | Beginner Roadmap | Page 5
+Phase 1 Set Up the Extension Skeleton Weeks 1–2
+In this phase you build the basic structure of the extension — like building the frame of a house before adding
+walls and furniture. At the end of Phase 1, you will have a real extension installed in Chrome that does
+something basic (like showing a popup when you click it).
+WHAT YOU WILL DO
+3 Create the manifest.json file (the permission slip)
+3 Make a simple popup window with a toggle switch
+3 Load the extension in Chrome and see it work
+3 Write a content script that runs on Netflix
+3 Test that your script can detect the video element
+WHAT YOU WILL LEARN
+→ What a browser extension is made of
+→ How Chrome reads the manifest.json file
+→ How to inject JavaScript into a website
+→ How to save settings with chrome.storage
+→ Basic debugging with Chrome DevTools
+YOUR TASKS FOR THIS PHASE
+1 Create a folder called "content-guardian" on your computer
+2 Inside it, create manifest.json with the basic fields: name, version, manifest_version (set to 3), permissions,
+and content_scripts
+3 Create popup.html — a simple HTML file with an ON/OFF toggle button
+4 Create content.js — this is the script that will run on Netflix
+5 Go to Chrome, open chrome://extensions, turn on Developer Mode, click "Load unpacked" and select your
+folder
+6 Open Netflix and open Chrome DevTools (press F12). In the Console tab, type:
+document.querySelector("video") — if it shows the video element, your script works!
+TIP You do NOT need to understand every line of code at first. Copy the basic manifest.json from the Chrome
+docs, load it, and make sure it works. Understanding comes after doing, not before.
+
+-- 5 of 13 --
+
+Content Guardian Extension | Beginner Roadmap | Page 6
+Phase 2 Detect the Video and Track Time Weeks 3–4
+Now that the extension exists, you teach it to "watch" the video. Every half second, your code will check what
+time the video is at. This is how the extension knows when a scene is approaching. At the end of Phase 2,
+you will see the current video timestamp printed in the browser console in real time.
+WHAT YOU WILL DO
+3 Find the video element on Netflix and Prime pages
+3 Read the video.currentTime property every 500ms
+3 Detect when the user pauses, seeks, or skips
+3 Identify which show/movie is currently playing
+3 Match the current URL to a show ID
+WHAT YOU WILL LEARN
+→ How JavaScript setInterval works (run code
+repeatedly)
+→ How to read properties from HTML elements
+→ What event listeners are and how to use them
+→ How to get information from a URL using
+JavaScript
+→ Why DRM protects video files (and why that is
+okay)
+YOUR TASKS FOR THIS PHASE
+1 In content.js, write: const video = document.querySelector("video")
+2 Use setInterval to run a function every 500 milliseconds
+3 Inside that function, log video.currentTime to the console
+4 Open Netflix, play any video, open DevTools — you should see numbers increasing every 0.5 seconds in
+the console
+5 Add an event listener for the "seeked" event so you know when someone jumps to a different part of the
+video
+6 Extract the show title from the Netflix page title (document.title) and log it
+TIP The video.currentTime property gives you the time in SECONDS. So 90.5 means 1 minute and 30.5
+seconds into the video. You will use this number to compare against your scene database.
+
+-- 6 of 13 --
+
+Content Guardian Extension | Beginner Roadmap | Page 7
+Phase 3 Build the Black Screen Overlay Weeks 5–6
+This is the most satisfying phase — you will actually make the black screen appear and disappear on
+command! You will create a div (an invisible box) that covers the entire screen, and you will control it with
+JavaScript. At the end of Phase 3, you can press a keyboard shortcut to test the blackout manually.
+WHAT YOU WILL DO
+3 Create a fullscreen black div using CSS
+3 Inject it into the Netflix page
+3 Show and hide it with JavaScript functions
+3 Add a "Scene covered" message on the overlay
+3 Add a "Skip / Watch anyway" button for adults
+3 Show a warning toast 10 seconds before the
+scene
+WHAT YOU WILL LEARN
+→ How CSS position:fixed works to cover the full
+screen
+→ How to use z-index to put elements on top of
+everything
+→ How to create and remove HTML elements with
+JavaScript
+→ How to style elements dynamically with
+JavaScript
+→ What setTimeout is (run code after a delay)
+YOUR TASKS FOR THIS PHASE
+1 In content.js, write a function called showOverlay() that creates a div with style: position fixed, width 100%,
+height 100%, background black, z-index 99999
+2 Write a function called hideOverlay() that removes that div
+3 Test it: temporarily call showOverlay() when the page loads — you should see a black screen on Netflix
+4 Add a white text message in the centre: "18+ Scene — Screen Covered"
+5 Add a small button: "Skip scene / Watch anyway" that calls hideOverlay()
+6 Write a function called showWarning(seconds) that shows a small yellow pop-up message in the corner
+saying "18+ scene in X seconds"
+TIP The z-index must be very high (like 99999) so the overlay appears ABOVE the Netflix player controls. If
+the Netflix player appears on top of your overlay, increase the z-index number.
+
+-- 7 of 13 --
+
+Content Guardian Extension | Beginner Roadmap | Page 8
+Phase 4 Connect the Scene Database Weeks 7–8
+This is where the extension becomes smart. You will create a database of scene timestamps and connect
+your extension to it. When the video reaches a listed timestamp, the overlay shows automatically. At the end
+of Phase 4, the extension will work for a real show with real timestamps!
+WHAT YOU WILL DO
+3 Create a Supabase database with a "scenes" table
+3 Add test data: a few real timestamps from a
+popular show
+3 Fetch scene data from Supabase when a show
+starts
+3 Compare video.currentTime to the fetched
+timestamps
+3 Trigger the overlay automatically when a match is
+found
+3 Trigger the warning 10 seconds before the scene
+WHAT YOU WILL LEARN
+→ What a database table is (like a spreadsheet)
+→ How to use fetch() to get data from the internet
+→ What JSON is (the format data travels in)
+→ How to compare two numbers in JavaScript
+→ How async/await works (waiting for data to arrive)
+YOUR TASKS FOR THIS PHASE
+1 Go to supabase.com, create a free project, create a table called "scenes" with columns: id, show_id,
+season, episode, start_sec, end_sec, scene_type
+2 Manually add 2-3 rows for a show you know well (look up timestamps on sites like doesthedogdie.com)
+3 In content.js, use fetch() to call the Supabase API and get scenes for the current show
+4 Store the result in a variable called currentScenes
+5 In your setInterval function, loop through currentScenes and check if video.currentTime is within any
+start_sec and end_sec range
+6 If yes: call showOverlay(). When video.currentTime > end_sec: call hideOverlay()
+7 Test with the show you added data for — the blackout should happen automatically!
+TIP Start with just ONE show and ONE scene. Get that working perfectly before adding more. Once one scene
+works automatically, adding more is just a matter of adding more rows to the database.
+
+-- 8 of 13 --
+
+Content Guardian Extension | Beginner Roadmap | Page 9
+Phase 5 Add the AI Detector (Smart Fallback) Weeks 9–12
+Your database only covers shows you have manually added. But what about shows that are NOT in the
+database? This is where AI comes in. The extension will take a screenshot of the video every 3 seconds and
+use an AI model (NsfwJS) to check if the frame contains adult content — completely on your device, nothing
+is uploaded to the internet.
+WHAT YOU WILL DO
+3 Load the NsfwJS library into the extension
+3 Use Canvas API to take a "screenshot" of the
+video every 3 seconds
+3 Pass that screenshot to NsfwJS to get a content
+score
+3 If the score is above 85%, trigger the overlay
+3 Combine database detection (Phase 4) with AI
+detection (Phase 5)
+3 Add a sensitivity slider in the settings popup
+WHAT YOU WILL LEARN
+→ What the Canvas API is and how to draw a video
+frame on it
+→ What a machine learning model is (in simple
+terms)
+→ How to load an external JavaScript library
+→ What a confidence score/probability means
+→ How to combine two different systems to make
+one stronger one
+YOUR TASKS FOR THIS PHASE
+1 In your manifest.json, add the NsfwJS library file or load it from a CDN
+2 Write a function called captureFrame() that: creates a canvas element, draws the current video frame on it,
+and returns the image data
+3 Write a function called checkFrame() that calls captureFrame() and then passes the result to the NsfwJS
+model
+4 NsfwJS returns scores like: { sexy: 0.12, porn: 0.87, hentai: 0.01 }. If porn + sexy > 0.85, call showOverlay()
+5 Use setInterval to call checkFrame() every 3 seconds
+6 Add a slider in popup.html labelled "AI Sensitivity" that saves the threshold value to chrome.storage
+TIP NsfwJS is not perfect. It will sometimes flag a romantic scene that is not explicit (false positive) or miss a
+scene (false negative). The database from Phase 4 handles known scenes accurately. AI handles
+unknown content as a best-effort fallback.
+
+-- 9 of 13 --
+
+Content Guardian Extension | Beginner Roadmap | Page 10
+Phase 6 Polish, Test & Publish to the Chrome Store Weeks 13–16
+Your extension works! Now you make it ready for real users. You will clean up the code, test it on multiple
+platforms, design a proper icon, and submit it to the Chrome Web Store. At the end of Phase 6, anyone in the
+world can install your extension!
+WHAT YOU WILL DO
+3 Test the extension on Netflix, Amazon Prime,
+Disney+, Hotstar
+3 Fix bugs found during testing
+3 Design an icon for the extension (can use Canva)
+3 Create a privacy policy page (required by Chrome
+Store)
+3 Write the Chrome Store listing description
+3 Submit for review and wait for approval
+WHAT YOU WILL LEARN
+→ How to test software properly (edge cases)
+→ What a privacy policy needs to say
+→ How the Chrome Web Store review process
+works
+→ How to write a compelling product description
+→ How to handle user feedback and bug reports
+YOUR TASKS FOR THIS PHASE
+1 Open Netflix, Prime Video, Disney+, and Hotstar — test the extension on each. Note any bugs or timing
+issues.
+2 Fix the top 3 most important bugs. Leave cosmetic issues for later.
+3 Go to canva.com and create a 128x128 pixel icon for the extension. Name it icon128.png and add it to
+manifest.json.
+4 Create a simple privacy policy page hosted on GitHub Pages or Notion. It must state that no video data is
+stored or uploaded.
+5 Pay the one-time $5 Chrome Web Store developer fee at chrome.google.com/webstore/devconsole
+6 Upload your extension ZIP file, add screenshots, write a description, and submit for review. Approval usually
+takes 1-3 business days.
+TIP The Chrome Store review team will reject your extension if you do not have a privacy policy. Keep it simple
+— one paragraph explaining that you do not collect, store, or share any user data.
+
+-- 10 of 13 --
+
+Content Guardian Extension | Beginner Roadmap | Page 11
+Problems You Will Face (And How to Solve
+Them)
+Every beginner faces these challenges. Knowing about them in advance means you will not be surprised
+when they happen!
+01 Netflix blocks direct access to video data
+Netflix protects its videos with something called DRM (Digital Rights Management). This means you
+cannot read the actual video file. BUT — you can take a screenshot of what is visible on screen using
+something called the Canvas API. This is perfectly allowed!
+Solution: Solution: Use Canvas API to capture what is shown, not the raw file.
+02 The video time is not always perfectly accurate
+When a viewer pauses, rewinds, or the internet is slow, the video clock can jump around. If you only
+check the exact second, you might miss the scene trigger.
+Solution: Solution: Add a buffer of plus or minus 5 seconds around every scene timestamp.
+03 Netflix keeps changing its website code
+Netflix regularly updates how their website is built. This can break parts of your extension that depend
+on specific HTML elements.
+Solution: Solution: Use the video element directly (document.querySelector("video")) instead of
+Netflix-specific class names. The video tag never changes.
+04 The scene database will never be complete
+There are thousands of shows and movies. You cannot manually add timestamps for all of them by
+yourself.
+Solution: Solution: Start with the top 100 most-watched titles. Use AI detection as a fallback. Let your
+users report missing scenes.
+05 The AI might be too slow and use too much CPU
+If you run the AI scene detector every second, it will slow down the computer and drain the laptop
+battery.
+Solution: Solution: Run the AI check only once every 3 seconds. Use TensorFlow.js which is
+optimised for browsers and uses the GPU, not the CPU.
+
+-- 11 of 13 --
+
+Content Guardian Extension | Beginner Roadmap | Page 12
+Free Learning Resources for Beginners
+These are the best free resources to learn everything you need for this project. They are all
+beginner-friendly.
+n Learn JavaScript (the main language)
+→ freeCodeCamp JavaScript Course — freecodecamp.org — free, 300+ hours, beginner friendly
+→ JavaScript.info — javascript.info — best written tutorial, very clear
+→ The Odin Project — theodinproject.com — full free curriculum, project-based
+n Learn Browser Extensions
+→ Chrome Extension Getting Started — developer.chrome.com/docs/extensions/mv3/getstarted
+→ Plasmo Framework (beginner tool) — docs.plasmo.com — makes extension setup much easier
+→ YouTube: Build a Chrome Extension — Search "Build Chrome Extension 2024 beginners" on YouTube
+n Learn HTML & CSS (basics)
+→ MDN Web Docs — developer.mozilla.org — the official reference, very reliable
+→ freeCodeCamp HTML/CSS — freecodecamp.org/learn/responsive-web-design
+n Understand APIs (fetching data)
+→ What is an API? (video) — Search "What is an API explained simply" on YouTube
+→ TMDB API Docs — developers.themoviedb.org/3/getting-started
+n AI / Machine Learning in browser
+→ TensorFlow.js tutorials — tensorflow.org/js/tutorials
+→ NsfwJS library — github.com/infinitered/nsfwjs — ready-made adult content detector
+
+-- 12 of 13 --
+
+Content Guardian Extension | Beginner Roadmap | Page 13
+You Can Build This!
+This roadmap might look big, but remember: you only need to do ONE small task at a time. Every
+professional developer started exactly where you are right now. The only difference between a beginner and
+an expert is that the expert failed and learned more times.
+End of Week 2 You have a real Chrome extension installed and running
+End of Week 4 You can see the video timestamp updating in real time
+End of Week 6 The black screen appears and disappears on command
+End of Week 8 The extension automatically covers real scenes from your database
+End of Week 12 The AI detector works as a fallback for unlisted content
+End of Week 16 Your extension is live on the Chrome Web Store!
+TIP Share your progress! Post on Twitter/X or LinkedIn as you complete each phase. Showing your work
+publicly keeps you accountable and you might even find early users who want to test your extension
+before it is officially published.
+
+-- 13 of 13 --
+

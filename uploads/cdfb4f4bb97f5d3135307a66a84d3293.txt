@@ -1,0 +1,46 @@
+PARUL AGRAWAL
+agrawalv868@gmail.com • (+91) 9754418850 • GitHub • LeetCode • CodeChef Codeforces
+PROFILE
+First-year CS student (CGPA 9.00) who builds and ships — 2 deployed projects, 2 open-source PRs merged, and a
+LeetCode rating of 1559. Comfortable across the full stack: Next.js frontends, REST API design, SQL schemas, and Git-
+based collaboration. Looking to write real code on a product that reaches real users.
+EDUCATION
+B.Tech in Mathematics & Computing — MITS Gwalior 	2024 – 2028
+CGPA: 9.00 / 10 • Relevant coursework: Data Structures & Algorithms, Operating Systems, DBMS
+XII (CBSE) — St. Michael's HSS, Satna 	2023 | 92.8%
+X (CBSE) — St. Michael's HSS, Satna 	2021 | 95.6%
+OPEN SOURCE
+GirlScript Summer of Code (GSSoC) · Open Source Contributor 	2024
+• Had 2 pull requests merged into an active open-source repository — both UI fixes reviewed and accepted by
+project maintainers.
+• Collaborated asynchronously with an existing codebase: read unfamiliar code, identified UI issues, and shipped
+fixes that met the project's contribution standards.
+PROJECTS
+Secure Voting System · Next.js · TypeScript · Clerk · CSS 	prime-vote-cast.vercel.app
+• Built and deployed a 6-page full-stack voting platform in Next.js + TypeScript — covering voter registration, login,
+election listing, filtering, and ballot submission.
+• Integrated Clerk authentication to handle 3 distinct auth flows (register, login, session management) with type-safe
+user state across all 6 pages.
+• Designed custom CSS layout and responsive state management from scratch — no UI library — keeping the
+codebase clean and independently maintainable.
+• Shipped solo from idea to live deployment on Vercel in under 3 weeks.
+Banker's Algorithm Simulator · HTML · CSS · Vanilla JS · DSA 	bankers-algorithm-simulator.vercel.app
+• Implemented the complete Banker's Algorithm (safety check + resource-request) in vanilla JS with zero
+dependencies — no frameworks, no libraries.
+• Built a step-by-step visualization engine that tracks resource allocation matrices in real time, making OS
+concurrency concepts — deadlock, safe states, process scheduling — interactive and debuggable.
+• Deployed on Vercel; used by classmates to verify algorithm logic during OS coursework.
+TECHNICAL SKILLS
+Languages: C++, Python, JavaScript, TypeScript, C, SQL
+Frameworks & Tools: Next.js, Node.js, React (familiar), HTML/CSS, Bootstrap, Vite
+Backend & Databases: REST API design, SQL, DBMS, schema design, Git & GitHub (PRs, branching, code review)
+CS Fundamentals: DSA, OOP, Operating Systems, DBMS, Concurrency & Synchronisation
+Deployment: Vercel, VS Code, GitHub
+ACHIEVEMENTS & COMPETITIVE PROGRAMMING
+• LeetCode max rating 1559 — top percentile for a first-year student; consistent solver across arrays, graphs, DP,
+and trees.
+• CodeChef max rating 1332 — active contest participant with hands-on experience in algorithm optimization under
+time pressure.
+
+-- 1 of 1 --
+
