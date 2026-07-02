@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
+
 export default function App() {
   const [file, setFile] = useState(null);
   const [uploadStatus, setUploadStatus] = useState("idle"); // 'idle' | 'uploading' | 'success' | 'error'
@@ -33,7 +35,7 @@ export default function App() {
     formData.append("file", file);
 
     try {
-      const response = await fetch("http://localhost:5000/upload", {
+      const response = await fetch(`${BACKEND_URL}/upload`, {
         method: "POST",
         body: formData,
       });
@@ -74,7 +76,7 @@ export default function App() {
     setChunks([]);
   
     try {
-      const response = await fetch("http://localhost:5000/api/search", {
+      const response = await fetch(`${BACKEND_URL}/api/search`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
